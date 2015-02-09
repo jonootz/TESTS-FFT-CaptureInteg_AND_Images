@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5939" MadCap:lastWidth="1212">
+    <head>
+    </head>
+    <body>
+        <h1>Images - Output</h1>
+        <table>
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Images - Output</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h1>Support in Web Outputs:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in HTML5 Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.ps, *.eps and *.pdf images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test with "Responsive output" on and off (HTML5 Skin editor).</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all web supported images work correctly in "Slideshow".</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 and above (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that inserted pdf images will be generated as web-safe images even when pages other than page one of the PDF was used.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in Web Help Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps,*.eps and *.pdf images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in Web Help Mobile Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all supported file types work in mobile output.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps and *.eps images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps, *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps and *.eps images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in Web Help Air Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps, *.eps and *.pdf images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in Web Help Plus Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps and *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps, *.eps and *.pdf images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in CHM Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps, *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.-</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps, *.eps and *.pdf images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in DotNet Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify all target frame settings for images for all web output types as well as topic previews.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that all supported image file types are supported in all outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that *.svg, *.ps, *.eps and *.pdf images are converted to *.png files. (Requires Ghostscipt and Java. See Compile Errors section below)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Test that ALL combinations of the following Advanced Target options and verify that in all cases images work properly:</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate Resized Images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Generate "web-safe" images</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Replace reserved characters with underscores</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Use lowercase filenames</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>* Test ALL combinations.Do not simply test all options together or each option individually. There are 15 combinations.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>** Be sure to setup test cases that will use the option. For example, use an image file called "My Image.svg" so that in the output it will become "my_image.jpg". The point is to test that the image link still works in the output after being processed by the target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>tiff/tif files are not supported by IE 7 or 8 but they are in IE 9 (for tif/tiff files, enable generate web safe images in the advanced tab of your target to be able to view them in web outputs)</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images linked to on the web are dynamic by changing the image on the web.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h1>Support in Print Outputs:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in PDF Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images display in all print outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the image compression options in the PDF Target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Vector images now converted to png for Frame output.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Make sure images are created on generation of output for web based images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in Word Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images display in all print outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the image compression options in the PDF Target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Vector images now converted to png for Frame output.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Make sure images are created on generation of output for web based images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in Frame Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images display in all print outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the image compression options in the PDF Target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Vector images now converted to png for Frame output.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Make sure images are created on generation of output for web based images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in XPS Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images display in all print outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the image compression options in the PDF Target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Vector images now converted to png for Frame output.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Make sure images are created on generation of output for web based images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in XHTML Book Outputs:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that images display in all print outputs.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the image compression options in the PDF Target.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Vector images now converted to png for Frame output.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Make sure images are created on generation of output for web based images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are removed when conditionalized out.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that the entire &lt;img&gt; tag and all of its properties are unbound when conditionalized out with the "Unbind" behavior.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify that applied styles are in outputs</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Image Types Supported: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Verify the filters include all supported image file types when Importing an image.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Using the Images test project listed at the top, check each of these image types.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Some of the types are not supported fully, but we need to make sure we don’t crash or error out when working with these types of images.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Support in DITA Output:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>For DITA output, the &lt;img&gt; tag will become a &lt;image href="Resources/Images/Ashlighting.jpg" /&gt; tag showing the relative path to the image. The image files themselves should simply be copied to the output folder.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Note: For *.svg and *.pdf, the image file remains as is and not converted to a web-safe image type.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <h2>Requirements:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p>Ghost Script required for *.ps ,*.eps and *.pdf file types. Verify that the link works correctly.</p>
+                        <p>
+                            <img src="Resources/Images/GhostscriptPrompt.png" />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p>Java is required for .svg file types. Verify that the link points to the Java download center.</p>
+                        <p>
+                            <img src="Resources/Images/JavaSVGPrompt.png" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
