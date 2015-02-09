@@ -1,0 +1,1397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="10670" MadCap:lastWidth="1212">
+    <head>
+    </head>
+    <body>
+        <h1>Images</h1>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Images - Add File</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adding an Image File to the Project</td>
+                </tr>
+                <tr>
+                    <td>Both Interfaces:</td>
+                </tr>
+                <tr>
+                    <td>CTRL+T to open Add File dialog and select Image in the File Type dropdown.</td>
+                </tr>
+                <tr>
+                    <td>Content Explorer: Right-click any folder and select !New | Image…. This will invoke the Add File dialog with the File Type set to Image and the clicked folder preselected.</td>
+                </tr>
+                <tr>
+                    <td>Toolstrip Interface:</td>
+                </tr>
+                <tr>
+                    <td>!Project | Add Image...</td>
+                </tr>
+                <tr>
+                    <td>Ribbon Interface:</td>
+                </tr>
+                <tr>
+                    <td>!File | New to open the Add File dialog and select Image in the File Type dropdown.</td>
+                </tr>
+                <tr>
+                    <td>!Project | New | Image. This will invoke the Add File dialog with the File Type set to Image</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Add File dialog: Image - UI Test Cases</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>File Type: Drop-Down UI that lets you select the file type that you want to add to the project.</td>
+                </tr>
+                <tr>
+                    <td>Source: The area used to hold the controls that determine where the new file will be copied from.</td>
+                </tr>
+                <tr>
+                    <td>New from template: Displays the Factory template folder plus any others that may have been set up using the Template Manager. The UI will only show files of the type selected to add.</td>
+                </tr>
+                <tr>
+                    <td>: Invokes the Template Manager.</td>
+                </tr>
+                <tr>
+                    <td>New from existing: Will allow the user to browse to any folder anywhere to select a file.</td>
+                </tr>
+                <tr>
+                    <td>: Invokes an Open dialog which lets you browse for the selected file type. The filter will be set to the file type selected to add. Test all drive types:</td>
+                </tr>
+                <tr>
+                    <td>Local</td>
+                </tr>
+                <tr>
+                    <td>UNC (Online and Offline)</td>
+                </tr>
+                <tr>
+                    <td>Mapped Drive (Online and Offline)</td>
+                </tr>
+                <tr>
+                    <td>Preview: Displays a preview of the template selected in the Source section</td>
+                </tr>
+                <tr>
+                    <td>Image:</td>
+                </tr>
+                <tr>
+                    <td>Folder: Allows users to select which folder they want to copy the selected file into.</td>
+                </tr>
+                <tr>
+                    <td>: Invokes a Select Folder dialog which lets you select the folder for the new file. Content files should be able to be saved anywhere under the "Content" folder.</td>
+                </tr>
+                <tr>
+                    <td>File Name: Allows for the naming of the new file.</td>
+                </tr>
+                <tr>
+                    <td>Add: Closes the dialog and invokes the Copy to Project dialog where you confirm adding the new file to the project. This button is not enabled until you select a template above, or until you select a source file from a different location.</td>
+                </tr>
+                <tr>
+                    <td>Cancel: Closes the dialog without adding the new file to the project.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>** Supported image file types: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swd *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf (bold file types added in V7 and pdf file type was added in V11)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>Copy to Project Dialog</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>If an image that is being inserted into a topic resides outside the project, clicking "OK" in the "Insert Image" dialog will generate the "Copy to Project" Dialog.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>Columns:</td>
+                </tr>
+                <tr>
+                    <td>Action: Displays the action being performed such as copy.</td>
+                </tr>
+                <tr>
+                    <td>File: Displays the name of the file. If the file is renamed projects containing those files may show a missing file so the user will have to re-add the file.</td>
+                </tr>
+                <tr>
+                    <td>Type: Displays the file type.</td>
+                </tr>
+                <tr>
+                    <td>Path: Displays the path where the file is stored. If the file is moved this path should update automatically.</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Button/Section Description:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The following files will be copied to the project:Displays the files to be copied. If the file being added is dependent on other files to operate correctly (e.g., if it is linked to another topic file), those necessary files are also listed in the dialog (and therefore copied as well).</td>
+                </tr>
+                <tr>
+                    <td>Keep file(s) synchronized (create mapping):Select this check box if you want to create a mapping between the project's copy of the image and the original source image</td>
+                </tr>
+                <tr>
+                    <td>Add Files to source control: If project is bound to source control flare offers to add the file to the repository</td>
+                </tr>
+                <tr>
+                    <td>Cancel: Closes the dialog without adding the new image file.</td>
+                </tr>
+                <tr>
+                    <td>OK: Adds the new image file to the project and opens the image in the Image Viewer.</td>
+                </tr>
+                <tr>
+                    <td>Note that all added images will by default be located in Content\Resources\Images (Images folder will be automatically created in Resources folder)</td>
+                </tr>
+                <tr>
+                    <td>Note that captured images using MadCap Capture will be stored in Content\Resources\Images, each image captured will be accompanied with a .props file that stores layer information for the corresponding image. The .props will have the same file name as the captured image</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Image Viewer</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MadCap Capture Icon (Edit this file with in MadCap Capture): Opens the image in MadCap Capture if you have it installed else it will prompt the user that they need MadCap Capture installed. This option should be greyed out if the image is a web image.</td>
+                </tr>
+                <tr>
+                    <td>Regenerate Captured Images: Regenerates the image with the most current version of the source file</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Misc Test Cases</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Test Cases</td>
+                </tr>
+                <tr>
+                    <td>Add all supported image file types to your project. Supported image file types: *.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; *.svg; *.ps; *.eps; *.pdf (bold file types added in V7, pdf added in V11)</td>
+                </tr>
+                <tr>
+                    <td>*.svg files require Java to be installed to view them in the Image Viewer. Attempting to open this image type without Java installed should prompt:</td>
+                </tr>
+                <tr>
+                    <td>*.ps, *.eps and *.pdf require Ghostscript to be installed to view them in the Image Viewer. Attempting to open either of these image types without Ghostscript installed should prompt:</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Opening the UI (Insert/Edit Image)</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Insert Image dialog</td>
+                </tr>
+                <tr>
+                    <td>From the Tool Strip, !Insert | Image</td>
+                </tr>
+                <tr>
+                    <td>From the Ribbon, !Insert|Image</td>
+                </tr>
+                <tr>
+                    <td>Click the  button in the local toolbar of the XML Editor</td>
+                </tr>
+                <tr>
+                    <td>Edit Image dialog</td>
+                </tr>
+                <tr>
+                    <td>Right-click an image that is already in a topic and select Edit Image</td>
+                </tr>
+                <tr>
+                    <td>Select an inserted image and press F4</td>
+                </tr>
+                <tr>
+                    <td>Select an inserted image and !Home | Properties</td>
+                </tr>
+                <tr>
+                    <td>* Images can also be inserted by dragging them from the Content Explorer into a topic (or snippet, or master page or page layout). As of V6, doing so will not invoke the Insert Picture dialog but simply insert the picture. Whether or not the dialog appears may become a global option in a future release. Images can also be inserted by dragging them into Flare from outside the project.</td>
+                </tr>
+                <tr>
+                    <td>Web images will not be affected by "Generate web-sage images" option in WebHelp targets and thumbnail options also will not affect web images. Also, Vector images that are resized do not resize in output in IE 9 when externally linked to</td>
+                </tr>
+                <tr>
+                    <td>Test Cases:</td>
+                </tr>
+                <tr>
+                    <td>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</td>
+                </tr>
+                <tr>
+                    <td>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</td>
+                </tr>
+                <tr>
+                    <td>Insert in paragraphs with various elements in them (Images, Form elements, Special Characters, Help Controls, etc)</td>
+                </tr>
+                <tr>
+                    <td>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</td>
+                </tr>
+                <tr>
+                    <td>Insert in many types of Elements (Tables, Forms, Text boxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</td>
+                </tr>
+                <tr>
+                    <td>Drag and drop images from the Content Explorer</td>
+                </tr>
+                <tr>
+                    <td>Drag and drop images from an external location (your Desktop or your "My Images" folder)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Insert/Edit Picture dialog: UI Test Cases</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>General Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>Select File: Select the image file. In v7.1 we offered the ability to type in web addresses here to link to images on the web.</td>
+                </tr>
+                <tr>
+                    <td>Options:</td>
+                </tr>
+                <tr>
+                    <td>Style Class: Select a style class for the image</td>
+                </tr>
+                <tr>
+                    <td>Screen Tip: Apply a screen tip to the image</td>
+                </tr>
+                <tr>
+                    <td>Alternate Text: Apply an alternate text to the image</td>
+                </tr>
+                <tr>
+                    <td>Tab Index: Set tab order (508 compliance)</td>
+                </tr>
+                <tr>
+                    <td>Apply alternate text and screen tip to all image references:Apply alternate text and screen tip to all image references (not available when using a web image)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Size Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>Size: Set a precise width and height. To preserve the aspect ration of an image, set the width or height to the value you want and set the other to "Automatic."</td>
+                </tr>
+                <tr>
+                    <td>Minimum: Set a minimum width and/or height. Use these options to enlarge a small image and preserve its aspect ratio.</td>
+                </tr>
+                <tr>
+                    <td>Maximum: Set a maximum width and/or height. Use these options to reduce the size of a large image while preserving its aspect ratio.</td>
+                </tr>
+                <tr>
+                    <td>Note: If you are using percentage for the size of an image, the percentage refers to the block containing that image, not to the image itself. For example, if you set the width to 60%, this does not mean that the image will be reduced to 60% of its size. Instead, it means that the image will be resized so that its width is 60% of the "container" where it is inserted.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Print Size Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Same as above however properties set in the Print Size tab are written locally to the print medium.</td>
+                </tr>
+                <tr>
+                    <td>Verify properties set in the Print Size tab are written locally to the print medium</td>
+                </tr>
+                <tr>
+                    <td>Verify you can set unique properties in each medium and that all images generate correctly in Web and Print output types.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Position Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>UI Controls</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Float: Use this field to specify where to place the picture on the page.</td>
+                </tr>
+                <tr>
+                    <td>For floats that include frames, you have to be in print layout mode</td>
+                </tr>
+                <tr>
+                    <td>None: Does not place the picture in a specific location.</td>
+                </tr>
+                <tr>
+                    <td>Left: Positions the picture on the left side of the page frame, allowing you to type text to the right of the picture.</td>
+                </tr>
+                <tr>
+                    <td>Right: Positions the picture on the right side of the page frame, allowing you to type text to the left of the picture.</td>
+                </tr>
+                <tr>
+                    <td>Center of Column: Positions the picture in the center of the column on the page.</td>
+                </tr>
+                <tr>
+                    <td>Outside Left Margin: Positions the picture beyond the left margin of the topic text.</td>
+                </tr>
+                <tr>
+                    <td>Outside Right Margin: Positions the picture beyond the right margin of the topic text.</td>
+                </tr>
+                <tr>
+                    <td>Outside Frame Positions: The picture outside of the page frame.</td>
+                </tr>
+                <tr>
+                    <td>Outside Frame, Top Align: Positions the picture outside of the page frame, as well as aligning it with the top of the frame.</td>
+                </tr>
+                <tr>
+                    <td>Left of Frame: Positions the picture to the left of the page frame.</td>
+                </tr>
+                <tr>
+                    <td>Right of Frame: Positions the picture to the right of the page frame.</td>
+                </tr>
+                <tr>
+                    <td>Center of Frame: Positions the picture both vertically and horizontally in the middle of the page frame.</td>
+                </tr>
+                <tr>
+                    <td>Clear: Use this field to position a picture so that it is "clear" of an adjacent picture.</td>
+                </tr>
+                <tr>
+                    <td>None: Does not apply the clear property to the picture.</td>
+                </tr>
+                <tr>
+                    <td>Left Side: The picture will be placed below the bottom outer edge of a previous picture that is floating left.</td>
+                </tr>
+                <tr>
+                    <td>Right Side: The picture will be placed below the bottom outer edge of a previous picture that is floating right.</td>
+                </tr>
+                <tr>
+                    <td>Both Sides: The picture will be placed below the a previous picture, whether it is floating left or right.</td>
+                </tr>
+                <tr>
+                    <td>Vertical Alignment: Use this field to adjust where the item is positioned vertically.</td>
+                </tr>
+                <tr>
+                    <td>Baseline: The baseline of the box will be aligned with the baseline of the parent box.</td>
+                </tr>
+                <tr>
+                    <td>Text Top: The top of the box will be aligned with the top of the parent element's font.</td>
+                </tr>
+                <tr>
+                    <td>Text Bottom: The bottom of the box will be aligned with the bottom of the line box.</td>
+                </tr>
+                <tr>
+                    <td>Top: The top of the box will be aligned with the top of the line box.</td>
+                </tr>
+                <tr>
+                    <td>Middle: The vertical midpoint of the box will be aligned with the baseline of the parent box, plus half the x-height of the parent.</td>
+                </tr>
+                <tr>
+                    <td>Bottom: The bottom of the box will be aligned with the bottom of the line box.</td>
+                </tr>
+                <tr>
+                    <td>Note: If you want to adjust the space between the object and the text that flows next to it, you can modify the margins on the object (using the Borders &amp; Margins tab in the dialog).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Thumbnails Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A feature for Web outputs which lets you display an image as a thumbnail. Upon hovering over or clicking on the thumbnail image, the full-size image appears. See the Thumbnails test plan for more details. Images Thumbnails.htm</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Borders &amp; Margins Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>Margin: Margin is the distance from the edge of the document to the edge of the content.</td>
+                </tr>
+                <tr>
+                    <td>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the margins around the image. Click the down arrow to the right of all the fields to apply setting to all of the margin fields.</td>
+                </tr>
+                <tr>
+                    <td>Border: Border is a line drawn around the content.</td>
+                </tr>
+                <tr>
+                    <td>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the image border. Click the down arrow to the right of all the fields to apply settings to all of the border fields.</td>
+                </tr>
+                <tr>
+                    <td>Padding: Adds extra space between an image's border and the image itself.</td>
+                </tr>
+                <tr>
+                    <td>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the padding in the image. If you click the down arrow to the right of all the fields, the settings will be applied to all of padding fields.</td>
+                </tr>
+                <tr>
+                    <td>Preview: Displays a preview of how a image will look as you specify settings.</td>
+                </tr>
+                <tr>
+                    <td>: sets the top, bottom, left and right setting all at the same time with the same values.</td>
+                </tr>
+                <tr>
+                    <td>Click on this thumbnail to see how you should expect Margin, Border and Padding get applied to an image:</td>
+                </tr>
+                <tr>
+                    <td>Test: test using the drop down setting selection as well as setting each area manually one at a time and all together. Some combinations may cause a problem. Don't just use the drop down and think that the rest work.</td>
+                </tr>
+                <tr>
+                    <td>Note: Different browsers may treat margin and padding settings differently. For example, Internet Explorer 8 and Firefox honor padding settings more than they honor margin settings. For example, if you were to set a left margin at 1 inch, Internet Explorer 7 would show it that way. However, in order to get the same results in Internet Explorer 8 or Firefox, you would also need to set the left padding at 1 inch.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Background Tab</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dialog title is correct</td>
+                </tr>
+                <tr>
+                    <td>Spelling and grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (forward and reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>F1 and “?” function and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls</td>
+                </tr>
+                <tr>
+                    <td>Negative numbers</td>
+                </tr>
+                <tr>
+                    <td>Large number</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Various characters and symbols (Inc. international)</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Default options are displayed in the screenshot</td>
+                </tr>
+                <tr>
+                    <td>Cancel, Esc, Red ‘X’ and ALT+F4 close the dialog without change</td>
+                </tr>
+                <tr>
+                    <td>OK and Enter close dialog with changes</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>Dialog remembers setting and sizes from previous session</td>
+                </tr>
+                <tr>
+                    <td>Dialog opens correctly on a dual monitor system</td>
+                </tr>
+                <tr>
+                    <td>Clicking the icon in the upper left corner displays options:</td>
+                </tr>
+                <tr>
+                    <td>Restore, Move, Size, Min., Max., Close – All work</td>
+                </tr>
+                <tr>
+                    <td>Restore, Min., Max are disabled</td>
+                </tr>
+                <tr>
+                    <td>UI Control</td>
+                </tr>
+                <tr>
+                    <td>Color: Sets the color of the background. In the Color field, click the down arrow and select a color from the popup.</td>
+                </tr>
+                <tr>
+                    <td>Image: Choose an image for the background.</td>
+                </tr>
+                <tr>
+                    <td>Repeat: Set the repeat pattern for the background image.</td>
+                </tr>
+                <tr>
+                    <td>X: Select or enter the position (in pixels) of the image in the background. This positions the background image horizontally (i.e., on the X axis).</td>
+                </tr>
+                <tr>
+                    <td>Y: Select or enter the position (in pixels) of the image in the background. This positions the background image vertically (i.e., on the Y axis).</td>
+                </tr>
+                <tr>
+                    <td>Preview: Displays the appearance of the background as you make selections in the tab.</td>
+                </tr>
+                <tr>
+                    <td>UI Controls (General tab)</td>
+                </tr>
+                <tr>
+                    <td>Images in Project</td>
+                </tr>
+                <tr>
+                    <td>Toolbar (Tooltips in parentheses):</td>
+                </tr>
+                <tr>
+                    <td>(Show/Hide All Files in Project): Changes the view in the dialog to "Show All Files" view. This view display all topics in the project in one grid. Detailed testing below.</td>
+                </tr>
+                <tr>
+                    <td>(Show/Hide Folders): Changes the view in the dialog to "Show Folders" view. This view displays all files in the project in a tree view, similar to the Content Explorer. This view can be combined with the "Show Files" view to offer a "Split" view. Detailed testing below.</td>
+                </tr>
+                <tr>
+                    <td>(Show/Hide Files): Changes the view in the dialog to "Show Files" view. This view displays all files in the project one folder at a time, similar to the "Show Files" view in the Content Explorer. This view can be combined with the "Show Folders" view to offer a "Split" view. Detailed testing below.</td>
+                </tr>
+                <tr>
+                    <td>(Up): Moves up one folder in the hierarchy within the project's Content folder. This button becomes enabled if you use the "Show Folders" or "Split" View and browse into a folder.</td>
+                </tr>
+                <tr>
+                    <td>[File filter]: Use this filter to limit the view of files to all images in the project (all supported file types) or just web-safe file types (*.png, *.jpg, *.jpeg, *.gif, *.swf). Test that you can also enter text in the filter (and press &lt;Enter&gt;) to filter by filename.</td>
+                </tr>
+                <tr>
+                    <td>[Image Path]: Displays the path to the linked image. Verify that you can use the pulldown to link to recently used image files.</td>
+                </tr>
+                <tr>
+                    <td>: You can click to find and select an image file outside of the project.</td>
+                </tr>
+                <tr>
+                    <td>Preview: Displays a preview of the image</td>
+                </tr>
+                <tr>
+                    <td>Style Class: If you want to apply a specific style class to the image, you can select it from the Style Class field.</td>
+                </tr>
+                <tr>
+                    <td>Screen Tip: Enter a phrase that will appear when the end user hovers over the picture.</td>
+                </tr>
+                <tr>
+                    <td>Alternate Text: Enter alternate text to display when the image is not available, such as when a disabled individual is using a screen reader.</td>
+                </tr>
+                <tr>
+                    <td>Note: If you the browse button to select an image outside the project, that file is then copied and placed inside the project. The image file is stored in the Resources\Images folder of the Content Explorer.</td>
+                </tr>
+                <tr>
+                    <td>Note: If you import Microsoft Word documents containing embedded pictures into a project, Flare places copies of those image files in subfolders within the Resources\Images folder. This is done in order to avoid naming conflicts with embedded images from other Word documents that you might import. The subfolders are named after the Word documents being imported.</td>
+                </tr>
+                <tr>
+                    <td>Images in Project ("Show Folders" view)</td>
+                </tr>
+                <tr>
+                    <td>"Show Folders" view Test Cases:</td>
+                </tr>
+                <tr>
+                    <td>Spelling and Grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (Forward and Reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls as appropriate</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>[+]/[-] : Expands/collapses the corresponding folder</td>
+                </tr>
+                <tr>
+                    <td>Test Cases</td>
+                </tr>
+                <tr>
+                    <td>Keyboard navigation (click for test cases)Closed</td>
+                </tr>
+                <tr>
+                    <td>Right-click should NOT produce a right-click menu.</td>
+                </tr>
+                <tr>
+                    <td>Horizontal and vertical scroll bars display as appropriate.</td>
+                </tr>
+                <tr>
+                    <td>Conditional indicators display appropriately</td>
+                </tr>
+                <tr>
+                    <td>File filter works in this view</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Images In Project ("Show Files" view)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spelling and Grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (Forward and Reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls as appropriate</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>"Show Files" Grid</td>
+                </tr>
+                <tr>
+                    <td>Columns</td>
+                </tr>
+                <tr>
+                    <td>Name: Displays the name of the file or folder.</td>
+                </tr>
+                <tr>
+                    <td>Size: Displays the size of the file (empty for folders).</td>
+                </tr>
+                <tr>
+                    <td>Date Modified: Displays the date and time the file or folder was last modified.</td>
+                </tr>
+                <tr>
+                    <td>Grid View Test Cases:</td>
+                </tr>
+                <tr>
+                    <td>All columns are sortable (A-Z and Z-A) (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Columns are resizable and this setting will be retained when closed and reopened (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Double-clicking the right border of any column heading resizes the column to fit its longest entry (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Columns can be dragged to a new location (reordered left-to-right) and this setting will be retained when closed and reopened (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Horizontal and vertical scrollbars should be working correctly</td>
+                </tr>
+                <tr>
+                    <td>Should be able to multi-select files using Shift-Click or CTRL-Click (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>Should be able to view/apply properties to a multi-selection (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>Clicking the box in the upper-left corner selects all rows (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>Double-clicking any row will open the item or the Properties dialog for that item (whichever is applicable)</td>
+                </tr>
+                <tr>
+                    <td>Selecting any row and pressing F4 will open the Properties dialog for that item (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>If the contents of any cell is too long to fit within the cell, the contents is appended with "…" and hovering over the cell produces a tooltip that includes the full contents</td>
+                </tr>
+                <tr>
+                    <td>Bookmark: Invokes the Select Place dialog for the selected topic file</td>
+                </tr>
+                <tr>
+                    <td>Test Cases</td>
+                </tr>
+                <tr>
+                    <td>Keyboard navigation (click for test cases)Closed</td>
+                </tr>
+                <tr>
+                    <td>Right-click should NOT produce a right-click menu.</td>
+                </tr>
+                <tr>
+                    <td>Horizontal and vertical scroll bars display as appropriate.</td>
+                </tr>
+                <tr>
+                    <td>Conditional indicators display appropriately</td>
+                </tr>
+                <tr>
+                    <td>File filter works in this view</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Images In Project (default "Split" view)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spelling and Grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (Forward and Reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls as appropriate</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>(Repeat all tests for "Show Folders" and "Show Files" views in this "Split" view)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Images In Project (default "Show All Files" view)</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spelling and Grammar are correct</td>
+                </tr>
+                <tr>
+                    <td>No duplicate accelerators</td>
+                </tr>
+                <tr>
+                    <td>All accelerators function</td>
+                </tr>
+                <tr>
+                    <td>Tab order is correct (Forward and Reverse orders)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard can navigate and change settings</td>
+                </tr>
+                <tr>
+                    <td>Dialog is easy to use and understand</td>
+                </tr>
+                <tr>
+                    <td>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</td>
+                </tr>
+                <tr>
+                    <td>Boundary test all controls as appropriate</td>
+                </tr>
+                <tr>
+                    <td>The “default” active button should make sense</td>
+                </tr>
+                <tr>
+                    <td>Dialog is resizable and redraws correctly</td>
+                </tr>
+                <tr>
+                    <td>UI Controls</td>
+                </tr>
+                <tr>
+                    <td>"Show All Files" Grid</td>
+                </tr>
+                <tr>
+                    <td>Columns</td>
+                </tr>
+                <tr>
+                    <td>File: Displays a list of all Content files in the project (that match the file filter)</td>
+                </tr>
+                <tr>
+                    <td>Type: Displays the file extension of the file.</td>
+                </tr>
+                <tr>
+                    <td>Path: Displays the location of the file within the project.</td>
+                </tr>
+                <tr>
+                    <td>Grid View Test Cases:</td>
+                </tr>
+                <tr>
+                    <td>All columns are sortable (A-Z and Z-A) (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Columns are resizable and this setting will be retained when closed and reopened (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Double-clicking the right border of any column heading resizes the column to fit its longest entry (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Columns can be dragged to a new location (reordered left-to-right) and this setting will be retained when closed and reopened (if applicable).</td>
+                </tr>
+                <tr>
+                    <td>Horizontal and vertical scrollbars should be working correctly</td>
+                </tr>
+                <tr>
+                    <td>Should be able to multi-select files using Shift-Click or CTRL-Click (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>Should be able to view/apply properties to a multi-selection (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>Clicking the box in the upper-left corner selects all rows (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>Double-clicking any row will open the item or the Properties dialog for that item (whichever is applicable)</td>
+                </tr>
+                <tr>
+                    <td>Selecting any row and pressing F4 will open the Properties dialog for that item (if applicable)</td>
+                </tr>
+                <tr>
+                    <td>If the contents of any cell is too long to fit within the cell, the contents is appended with "…" and hovering over the cell produces a tooltip that includes the full contents</td>
+                </tr>
+                <tr>
+                    <td>Bookmark: Invokes the Select Place dialog for the selected topic file</td>
+                </tr>
+                <tr>
+                    <td>Test Cases</td>
+                </tr>
+                <tr>
+                    <td>Keyboard navigation (click for test cases)Closed</td>
+                </tr>
+                <tr>
+                    <td>Right-click should NOT produce a right-click menu.</td>
+                </tr>
+                <tr>
+                    <td>Horizontal and vertical scroll bars display as appropriate.</td>
+                </tr>
+                <tr>
+                    <td>Conditional indicators display appropriately</td>
+                </tr>
+                <tr>
+                    <td>File filter works in this view</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Misc Test Cases</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Test Cases</td>
+                </tr>
+                <tr>
+                    <td>Test to drag and drop images from a folder to another folder within Content Explorer, make sure all of the links are updated</td>
+                </tr>
+                <tr>
+                    <td>Test to drag and drop images from Content Explorer to WYSIWYG, make sure all of the links are updated</td>
+                </tr>
+                <tr>
+                    <td>Test to cut/copy/paste images across folders in content explorer, WYSIWYG, make sure all of the links are updated</td>
+                </tr>
+                <tr>
+                    <td>Verify that images and images with Classes are rendered correctly in the editor when the editor is resized</td>
+                </tr>
+                <tr>
+                    <td>Verify that images and images with Classes are rendered correctly in tables/cells when the table/cell is resized</td>
+                </tr>
+                <tr>
+                    <td>Verify images inserted in Text Boxes are rendered correctly with various Float properties applied.</td>
+                </tr>
+                <tr>
+                    <td>You can apply or change a style to the image, edit the image, and delete the image.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
